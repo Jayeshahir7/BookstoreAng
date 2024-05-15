@@ -1,0 +1,37 @@
+<form [formGroup]="myForm" (ngSubmit)="insert()" class=" form-control border border-success border border-3">
+    <table class="container">
+        <tr >
+            <td>Enter BookID</td>
+            <td>:</td>
+            <td><input type="number" class="  form-control border border-success border border-3" formControlName="BookID"></td>
+        </tr>
+        <tr>
+            <td>Enter Bookimg</td>
+            <td>:</td>
+            <td><input type="text" class=" form-control border border-success border border-3"formControlName="Bookimg"></td>
+        </tr>
+        <tr>
+            <td>Enter Title</td>
+            <td>:</td>
+            <td><input type="text"class=" form-control border border-success border border-3" formControlName="Title"></td>
+        </tr>
+        <tr>
+            <td>Enter Author</td>
+            <td>:</td>
+            <td><input type="text" class=" form-control border border-success border border-3"formControlName="Author"></td>
+        </tr>
+        <tr>
+            <td>Enter Genre</td>
+            <td>:</td>
+            <td><input type="text"class=" form-control border border-success border border-3" formControlName="Genre"></td>
+        </tr>
+        <tr>
+            <td>Enter Price</td>
+            <td>:</td>
+            <td><input type="number" class=" form-control border border-success border border-3"formControlName="Price"></td>
+        </tr>  
+    </table>
+    <button *ngIf="id==-1" class="container btn btn-success btn-lg m-3  border border-2 border-success">Add</button>
+    <button *ngIf="id>0" class="container btn btn-warning btn-lg m-3  border border-2 border-warning">Save </button>
+</form>
+

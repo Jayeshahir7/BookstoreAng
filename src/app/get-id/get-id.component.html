@@ -1,0 +1,29 @@
+
+
+<div class="container mt-3 border border-3 border-success-subtle rounded">
+    <div class="row ">
+      <div class="col-4 m-2 mb-5">
+        <img src={{data.Bookimg}} width={{350}} height={{450}} class="img ms-2" />
+      </div>
+      <div class="col">
+        <table class="table" >
+          <tr>
+            <td>
+              <h1 class="h1 mt-4 text-primary ">BookID :-  {{data.BookID}}</h1>
+              <h3 class="p1 text-danger">Title :- {{data.Title}}</h3>
+              <h3 class="p1 text-danger ">Price :- {{'₹ '+data.Price}}</h3>
+              <h3 class="p1 text-danger">Author :- {{data.Author}}</h3>
+              <h3 class="p1 text-danger">Genre :- {{data.Genre}}</h3>
+              <button routerLink="/" class="btn btn-secondary btn-lg m-3  border border-2 border-secondary">Back</button>
+              <button (click)="delete()" class="btn btn-danger btn-lg m-3  border border-2 border-danger">Delete</button>
+              <button routerLink="/edit/{{data.BookID}}" class="btn btn-warning btn-lg m-3  border border-2 border-warning">Edit</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+          
+

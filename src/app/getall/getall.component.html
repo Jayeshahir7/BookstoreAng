@@ -1,0 +1,11 @@
+<div class="row">
+  <button routerLink="book/add" class="btn btn-secondary btn-lg m-3  border border-2 border-secondary">Add Books</button>
+  <div class="col-3 card" *ngFor="let t of data" >
+    <img [src]="t.Bookimg" class="card-img-top" alt="... " style="height: 350px;">
+    <div class="card-body">
+      <h5 class="card-title">{{t.Title}}</h5>
+      <h5 class="card-title">{{'₹'+t.Price}}</h5>
+      <a routerLink="/book/{{t.BookID}}" class="btn btn-primary">View more</a>
+    </div>
+  </div>
+</div>
